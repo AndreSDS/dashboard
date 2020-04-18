@@ -1,1 +1,31 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+            <h2>André Souza da Silva</h2>
+            <h4>exmple@gmail.com</h4>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Siberian-husky.jpg" alt="">
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Pages</h2>
+
+    <a mat-list-item routerLink="/" routerLinkActive="list-link-active">Dashboard</a>
+    <a mat-list-item routerLink="/posts" routerLinkActive="list-link-active">Posts</a>
+    <a mat-list-item routerLink="/articles" routerLinkActive="list-link-active">Articles</a>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Tools</h2>
+    <a mat-list-item routerLink="/contacts" routerLinkActive="list-link-active">
+        <mat-icon>import_contacts</mat-icon> 
+        Contacts
+    </a>
+
+    <a mat-list-item routerLink="/leads" routerLinkActive="list-link-active">
+        <mat-icon>contact_phone</mat-icon> 
+        Leads
+    </a>
+
+</mat-nav-list>
