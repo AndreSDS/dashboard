@@ -5,13 +5,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HighchartsChartModule } from 'highcharts-angular';
 import { MatDividerModule, MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule, MatListModule } from '@angular/material';
+import { AreaComponent } from './widgets/area/area.component';
+import { CardComponent } from './widgets/card/card.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AreaComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -23,12 +28,15 @@ import { MatDividerModule, MatToolbarModule, MatIconModule, MatButtonModule, Mat
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    HighchartsChartModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AreaComponent,
+    CardComponent
   ]
 })
 export class SharedModule { }
