@@ -13,5 +13,6 @@ mat-drawer{
 }
 
 mat-drawer-content{
+    background-color: lightgrey;
     padding: 20px;
 }

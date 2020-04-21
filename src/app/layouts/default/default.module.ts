@@ -2,11 +2,12 @@ import { SharedModule } from './../../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatSidenavModule, MatDividerModule, MatCardModule } from '@angular/material';
+import { MatSidenavModule, MatPaginatorModule, MatTableModule, MatDividerModule, MatCardModule } from '@angular/material';
 
 import { DefaultComponent } from './default.component';
 import { DashBoardComponent } from '../../pages/dashboard/dashboard.component';
 import { PostsComponent } from '../../pages/posts/posts.component';
+import { DashboardService } from 'src/app/modules/dashboard.service';
 
 @NgModule({
   declarations: [
@@ -20,10 +21,15 @@ import { PostsComponent } from '../../pages/posts/posts.component';
     SharedModule,
     MatSidenavModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   exports: [
     MatSidenavModule
+  ],
+  providers: [
+    DashboardService
   ]
 })
 export class DefaultModule { }
